@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            /* margin: 0 10px; */
+        }
+
+        img.logo {
+            width: 250px;
+        }
+
+        img.logo2 {
+            width: 250px;
+        }
+
+        header {
+            height: 150 px;
+            border: 2px solid blueviolet;
+
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .section1 {
+            text-align: center;
+        }
+
+        header,
+        ul {
+            border: 1px solid red;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+
+        }
+
+        address {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- პირველი კომენტარი დავუთმოთ ჰედერს  -->
+    <header>
+        <img src="https://tse3.mm.bing.net/th?id=OIP.wtNjE96yDf5_EFJbpOF3RQHaEV&pid=Api&P=0&h=220" alt="vashadze"
+            class="logo">
+        <nav class="main-nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+
+        </nav>
+        <img src="https://cdn2.ipn.ge/media/uploads/2022/06-16/vashadze_giorgi.jpg" alt="vasho" class="logo2">
+    </header>
+
+    <main>
+        <h1> გამოცანა </h1>
+        <!-- შემოვიტანეთ ყველა თეგი და ელემენტი და ყველაფერი რაც დაგვავალეს -->
+        <div class="section1">
+            <section>
+                <article>
+                    <h2> სად მარხია ძაღლის თავი?! </h2>
+                    <p> <strong> არც</strong> ჩვენ <em> არ </em> ვიცით... </p>
+                    <p> <span class="p2"> ამ გამოცანის ამოხსნას წლებია ვცდილობთ, მაგრამ არც ჩვენ არ გამოგვდის </span> .
+                    </p>
+                    <figure>
+                        <img src="https://i.ytimg.com/vi/Jh_aLH1w9_o/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgXihPMA8=&rs=AOn4CLApauFN7CWawXsj87jl1h1ZF2aipA"
+                            alt="Giorgi vashadze">
+                        <figcaption> გიორგი ვაშაძე გაბრაზებულია.</figcaption>
+                    </figure>
+                </article>
+            </section>
+        </div>
+
+
+        <aside class="section1">
+            <div>
+                <section>
+                    გიორგი ვაშაძის რეაქციები.
+                </section>
+            </div>
+        </aside>
+
+    </main>
+
+
+    <!-- comment comment comment -->
+    <footer>
+        <address> Visit us: <a href=" https://maps.app.goo.gl/TF7eAhuJLFpxom6g9" target="_blank"> Makhindjauri </a>
+        </address>
+        &copy; Tel: Fb: Insta: Email:
+    </footer>
+
+</body>
+
+</html>
