@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        th {
+            background-color: azure;
+        }
+
+        td:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Table N1 for list of participants -->
+    <table>
+        <caption>
+            <h1>List of Participants </h1>
+        </caption>
+        <tr>
+            <th scope="col" id="Name"> Name</th>
+            <th scope="col" id="Age"> Age </th>
+            <th scope="col" id="Email"> Email </th>
+        </tr>
+        <tr>
+            <td headers="Name">ketevan</td>
+            <td headers="Age">27</td>
+            <td headers="Email">ketevankatamadze@gmail.com</td>
+        </tr>
+        <tr>
+            <td headers="Name">Tekla</td>
+            <td headers="Age">23</td>
+            <td headers="Email">teklapapava@Gmail.com</td>
+        </tr>
+        <tr>
+            <td headers="Name">Makhare</td>
+            <td headers="Age">28</td>
+            <td headers="Email">makhare124@gmail.com</td>
+        </tr>
+        <tr>
+            <td headers="Name">Tornike</td>
+            <td headers="Age">30</td>
+            <td headers="Email">tornikekata@gmail.com</td>
+        </tr>
+        <tr>
+            <td headers="Name">Daria</td>
+            <td headers="Age">30</td>
+            <td headers="Email">dariakata@gmail.com</td>
+        </tr>
+    </table>
+
+    <!-- Table N2 for Weekly activity -->
+
+    <table aria-label="activity schedule">
+        <caption>
+            <h1> Weekly Activity Schedule </h1>
+        </caption>
+        <tr>
+            <th></th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+            <th scope="col">Wednesday </th>
+            <th>Thursday</th>
+            <th scope="col">Friday</th>
+            <th scope="col">Saturday</th>
+            <th scope="col">Sunday</th>
+        </tr>
+        <tr>
+            <th>Morning</th>
+            <td colspan="7" style="text-align: center;"> <b> Yoga class </b> </td>
+
+        </tr>
+        <tr>
+            <th>Afternoon</th>
+            <td></td>
+            <td rowspan="2" style="text-align: center;"> <b>Team meating </b> </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th>
+                <table>
+                    <caption> Choose</caption>
+                    <tr>
+                        <th>13:00</th>
+                        <td>Board games</td>
+                    </tr>
+                    <tr>
+                        <th> 17:00</th>
+                        <td>Football</td>
+                    </tr>
+
+                </table>
+            </th>
+
+        </tr>
+        <tr>
+            <th>Evening</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+    </table>
+
+    <!-- Table N3 for shopping cart -->
+
+    <table aria-label="Shopping cart">
+        <caption>
+            <h1> Shopping cart </h1>
+        </caption>
+        <thead style="color: green;">
+            <tr>
+
+                <th scope="col">Name</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price per item</th>
+                <th scope="col">Total price</th>
+            </tr>
+        </thead>
+
+        <tbody style="color: blueviolet;">
+            <tr>
+                <th>coca-cola</th>
+                <td> 3 </td>
+                <td> ₾1 </td>
+                <td> ₾3 </td>
+            </tr>
+            <tr>
+                <th>Pringles </th>
+                <td>1</td>
+                <td>₾10</td>
+                <td>₾10</td>
+            </tr>
+            <tr>
+
+                <th>Snickers</th>
+                <td>2</td>
+                <td>₾2</td>
+                <td>₾4</td>
+            </tr>
+            <tr>
+
+                <th>Kit-kat</th>
+                <td>2</td>
+                <td>₾2</td>
+                <td>₾4</td>
+            </tr>
+        </tbody>
+
+        <tfoot style="color: red; background-color: grey;">
+            <tr>
+                <th colspan="4" style="text-align: right;"> total price: 21 GEL</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Bonus Task for Calendar -->
+    <table>
+        <caption>
+            <h1> December </h1>
+        <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td style="background-color: lightgrey;">1</td>
+            <td style="background-color: lightgrey;">2</td>
+            <td style="background-color: lightgrey;">3</td>
+            <td style="background-color: lightgrey;">4</td>
+        </tr>
+        </caption>
+    </table>
+
+
+</body>
+
+</html>
