@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    /* ეს რაარი კარგად გავარკვიო */
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+h2 {
+    font-size: 24px;
+    
+}
+
+h3 {
+    font-size: 20px;
+    color: darkgreen;
+}
+
+p{
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.project1 {
+    background-color: darksalmon;
+    color: brown;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 80px;
+}
+
+.project2 {
+    background-color: darkcyan;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 80px;
+
+}
+.project3 {
+    background-color:darkgray ;
+    color: red;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 80px;
+
+}
+
+#about {
+    background-color: lightgrey;
+    text-align: center;
+}
+
+#skills {
+    background-color: lightyellow;
+    /* გავარკვიო რატო არ მუშაობს */
+    list-style: bold;
+}
+
+nav li {
+    color: darkred;
+}
+
+
+li::before {
+    content: "⭐ ";
+    }
+
+.list-color {
+    color: darkred;
+}
+
+
+ #projects   h3 { 
+    text-align: center;
+} 
+
+.imgPaskunji {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+a:hover { 
+    color: orange;
+    /* ესეც გავარკვიო */
+    text-underline-position:auto;
+}
+
+#testimonials {
+
+    color: black;
+    font-style: italic; 
+    
+
+}
+
+
