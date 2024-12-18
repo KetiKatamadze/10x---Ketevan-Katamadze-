@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); 
+
+
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    font-family: "Inter", serif;
+    background-color: rgba(233, 240, 255, 1) ;
+    display: flex;
+    justify-content: center; 
+    padding-top: 200px; 
+    
+}
+
+.background{
+    background-color: white;
+    width: 500px;
+    height: 850px;
+    border-radius: 41px;
+    border: 2px solid rgb(223, 215, 215);
+    position: relative;
+
+
+}
+
+.header-h3 {
+    font-size: 21px;
+    color: rgba(129, 133, 156, 1);
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    padding: 10px;
+
+}
+
+.iphone-image{
+    width: 332.17px;
+    height: 405.59px; 
+    display: flex;
+    justify-content: center;
+    margin-left: 90px;
+    padding-top: 20px;
+}
+
+.scale {
+    width: 42px;
+    height: 42px;
+    background-color: rgba(233, 240, 255, 1); 
+    padding: 14px;
+    border-radius: 100px;
+}
+
+.duotone {
+    padding-top: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.scale_duotone {
+    position: absolute;
+    top: 160px;
+    left: 390px;
+}
+
+.description-text {
+    color: rgba(54, 56, 66, 1);
+    font-size: 28px;
+    color: 363842;
+    margin-left: 42px;
+    padding-top: 20px; 
+}
+
+.star_message { 
+    
+    margin-left: 42px;
+    padding-top: 20px;
+    display: flex;
+}
+
+.message {
+    margin-left: 10px;
+}
+
+.description-paragraph {
+    font-size: 21px;
+    margin-left: 10px; 
+}
+.star_icon {
+    width: 28px;
+    height: 28px;
+}
+
+.old-sale {
+    display: flex;
+    /* margin-left: 42px;
+    padding-top: 100px; */
+    
+}
+
+.old_price {
+    
+    font-size: 28px;
+    color: grey;
+
+}
+
+.sale {
+    color: rgba(54, 56, 66, 1);
+    background-color: rgba(233, 240, 255, 1);
+    border-radius: 3.5px;
+    width: 50px;
+    height: 30px;
+    /* margin-left: 10px;
+    padding-top: 5px;  */
+    
+
+
+}
+
+.new_price {
+    font-size: 48px;
+    color: rgba(54, 56, 66, 1);
+    /* margin-left:  42px; */
+}
+
+.cart-icon{
+    width: 41px;
+    height: 41px;
+    background-color:  rgba(38, 103, 255, 1); 
+    padding: 28px;
+    border-radius: 28px;
+    display: flex; 
+    /* flex-direction: row;
+    justify-content: end; */
+
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 80px;
+
+}

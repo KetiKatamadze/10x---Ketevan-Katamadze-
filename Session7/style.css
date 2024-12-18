@@ -57,7 +57,6 @@ p{
 
 #skills {
     background-color: lightyellow;
-    /* გავარკვიო რატო არ მუშაობს */
     list-style: bold;
 }
 
@@ -96,7 +95,7 @@ a:hover {
 
     color: black;
     font-style: italic; 
-    
+
 
 }
 
