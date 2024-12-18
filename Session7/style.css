@@ -1,8 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-
-    /* ეს რაარი კარგად გავარკვიო */
     box-sizing: border-box;
 }
 
@@ -79,7 +77,7 @@ li::before {
 } 
 
 .imgPaskunji {
-    width: 300px;
+    width: 301px;
     height: 300px;
     border: 2px solid black;
     border-radius: 50%;
