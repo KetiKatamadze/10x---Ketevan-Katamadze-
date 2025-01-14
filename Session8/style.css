@@ -12,7 +12,7 @@ body {
     background-color: rgba(233, 240, 255, 1) ;
     display: flex;
     justify-content: center; 
-    padding-top: 200px; 
+    padding: 200px; 
     
 }
 

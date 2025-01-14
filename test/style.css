@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+.rects {
+    position: relative;
+    bottom: 200px;
+}
+.rect1, .rect2, .rect3 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+.rect1 {
+    background-color: yellow;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    transform: translateY(100%);
+}
+.rect2 {
+    background-color: green;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+}
+.rect3 {
+    background-color: grey;
+    z-index: 0;
+}
+
+.rect1:hover, .rect2:hover, .rect3:hover {
+    z-index: 3;
+} 

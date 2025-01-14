@@ -1,0 +1,706 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 41px;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: white;
+
+}
+
+.header-nav {
+    width: 478px;
+    height: 22px;
+}
+
+.header-nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+/* .header-nav  ul :hover {
+    transition: .3s; 
+} */
+
+.panto_name {
+    margin-top: 10px;
+
+}
+
+.shopping.bag {
+    position: relative;
+}
+
+.bag_icon {
+    
+    margin-top: 10px;
+}
+
+.bac-icon-numb {
+    position: absolute;
+    top: 47px;
+    left: 1810px;
+   
+}
+
+.main-page {
+    overflow: hidden;
+    background-image: url(./Media/background_image_1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    /* width: 100vw; */
+    height: 100vh;
+}
+
+
+.main-page-title {
+    font-size: 80px;
+    line-height: 104px;
+    margin-top: 98px;
+    color: white;
+
+}
+
+.main-page-description {
+    font-size: 20px;
+    line-height: 38.4px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 14px;
+    opacity: 80%;
+
+}
+
+.search-bar-frame {
+    width: 344px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    border-radius: 42px;
+    border: 0.86px solid #FFFFFF;
+    margin-top: 45px;
+    margin-left: 40%;
+
+}
+
+.search-bar-text {
+    font-size: 18px;
+    line-height: 27px;
+    color: white;
+    opacity: 80%;
+    padding: 15.5px;
+}
+
+.search-icon {
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+/* first page bottom section */
+
+.why-section {
+
+    background-color: #FFFFFF;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+
+
+}
+
+.title {
+    width: 242px;
+    height: 104px;
+    margin: 80px;
+    font-size: 42px;
+    line-height: 49.22px;
+    color: black;
+    display: flex;
+
+}
+
+.article-h4 {
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.article-text {
+    width: 284px;
+    height: 90px;
+    font-size: 16px;
+    opacity: 80%;
+    margin-top: 20px;
+    line-height: 30px;
+
+}
+
+.more-info {
+    display: flex;
+    gap: 15px;
+    color: rgba(229, 132, 17, 1);
+    margin-top: 14px;
+}
+
+/* Best Selling Products Section */
+
+.best-sellers {
+    height: 906px;
+    background-color: rgba(247, 247, 247, 1);
+    padding: 50px;
+}
+
+
+.best-sellers-title {
+    font-size: 42px;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 50px; */
+
+}
+
+.best-sellers-nav ul {
+    width: 350px;
+    height: 57px;
+    background-color: rgba(238, 238, 238, 1);
+    border-radius: 44px;
+    font-size: 18px;
+    opacity: 80%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    margin-top: 34px;
+    margin-left: 40%;
+
+}
+
+.best-sellers-nav ul li:hover {
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.3s;
+
+}
+
+/* Chairs */
+
+.chairs { 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 50px;
+
+}
+
+.chairs-img-1 {
+    
+    width: 217.9px;
+    height: 256px;
+    margin-top: 80px;
+    /* rotate: -180°; */
+
+}
+
+.arrow-left {
+    position: absolute;
+    top: 280px;
+    left: 320px;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 280px;
+    left: 1390px;
+
+}
+
+
+.chairs-img-2 {
+    width: 217.9px;
+    height: 256px;
+    margin-top: 80px;
+
+}
+
+.chairs-img-3 {
+    width: 223px;
+    height: 250px;
+    margin-top: 80px;
+
+}
+
+.chairs-img-4 {
+    width: 240px;
+    height: 290px;
+    margin-top: 80px;
+
+}
+
+.chairs-description {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.sakarias-chair {
+    background-color: white;
+    width: 230px;
+    height: 180px;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+.baltsar-chair {
+    background-color: white;
+    width: 230px;
+    height: 180px;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+.anjay-chair {
+    background-color: white;
+    width: 230px;
+    height: 180px;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+.nyantuy-chair {
+    background-color: white;
+    width: 230px;
+    height: 180px;
+    padding: 20px;
+
+}
+
+.chair-title {
+    font-size: 16.76px;
+    color: rgba(141, 141, 141, 1);
+    line-height: 21px;
+
+}
+
+.chair-name {
+    font-size: 21.4px;
+    color: rgba(13, 27, 57, 1);
+    line-height: 26px;
+
+}
+
+.star-icon-section {
+    margin-top: 10px;
+}
+
+.add-click {
+    margin-top: 10px;
+}
+
+.chair-prices {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-text {
+    margin-top: 30px;
+}
+
+.view-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 15px;
+    color: rgba(229, 132, 17, 1);
+}
+
+.view-all-arrow {
+    width: 40px;
+    height: 11px;
+    margin-top: 3px;
+}
+
+/* EXPERIENCES AND MATERIALS */
+
+
+/* epxeriences */
+
+.experiences {
+    margin-top: 300px ;
+    display: flex; 
+    gap: 300px;
+}
+
+.grey-rectangle-vertical {
+    background-color: rgba(247, 247, 247, 1); 
+    width: 430px;
+    height: 422px;
+    border-radius: 0 20px 20px 0;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: -60px;
+}
+
+.grey-rectangle-horizontal {
+    background-color: rgba(247, 247, 247, 1); 
+    width: 490px;
+    height: 301px;
+    border-radius: 0 20px 20px 0;
+    z-index: 2;
+    position: absolute;
+    right: -60px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+.experience-img-shadow {
+    position: relative;
+    width: 630px;
+    height: 445px; 
+}
+.experiences-img {
+    width: 630px;
+    height: 445px; 
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 20px 20px 0;
+}
+.img-shadow {
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    z-index: 0;
+    
+}
+
+.experiences-text {
+    margin-top: 20px;
+}
+.experiences-title {
+    font-size: 18px;
+    color: rgba(229, 132, 17, 1);
+    line-height: 21px;
+}
+
+.experiences-name {
+    width: 413px;
+    height: 104px;
+    font-size: 42px;
+    line-height: 50px;
+    margin-top: 20px;
+
+}
+
+.experiences-text {
+    
+    width: 556px;
+    height: 132px;
+    font-size: 18px;
+    line-height: 34px;
+    opacity: 80%;
+
+}
+
+.info-text {
+    font-size: 14px;
+    line-height: 26px;
+
+}
+
+.experiences-more-info-arrow {
+    width: 37px;
+    height: 11px;
+    margin-top: 7px;
+}
+
+/* materials */
+
+.materials {
+    margin-top: 300px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.materials-text {
+margin-top: 170px;
+}
+
+.materials-images {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.big-furniture-img {
+    width: 630px;
+    height: 445px;
+    border-radius: 20px 0 0 20px ;
+    display: flex;
+    margin-top: 100px;
+}
+
+.grey-rectangle-horizontal {
+    background-color: rgba(247, 247, 247, 1); 
+    width: 490px;
+    height: 301px;
+    border-radius: 0 20px 20px 0;
+    z-index: 2;
+    position: absolute;
+    right: -60px; 
+    top: 50%;
+    transform: translateY(-50%);
+    
+
+}
+.furniture-image-top {
+    width: 223px;
+    height: 229px;
+    border-radius: 14.25px;
+    
+}
+
+.furniture-image-bottom {
+    width: 223px;
+    height: 339px;
+    border-radius: 14.25px;
+    
+}
+.images-align {
+    display: flex;
+    flex-direction: column; 
+    gap: 47px;
+    margin-right: 42px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+    display: flex;
+    justify-content: center;  
+    flex-direction: column; 
+    
+}
+
+.clients-reviews {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 38px;
+ 
+}
+
+.review-background-1 {
+    
+    background-image: url(./Media/review-img1.png);
+    width: 370px;
+    height: 506px;
+    background-repeat: no-repeat; 
+    
+}
+
+.arrow-left-review {
+
+    position: absolute;
+    top: 150px;
+    left: 310px;
+
+}
+
+.arrow-right-review {
+    position: absolute;
+    top: 150px;
+    left: 1500px;
+
+}
+
+.review-background-2 {
+    
+    background-image: url(./Media/review-img2.png);
+    width: 370px;
+    height: 506px;
+    background-repeat: no-repeat;
+}
+
+.review-background-3 {
+    
+    background-image: url(./Media/review-img3.png);
+    width: 370px;
+    height: 506px;
+    background-repeat: no-repeat;
+} 
+
+.review-white-background-align {
+    display: flex;
+    justify-content: center;
+    margin-top: 220px;
+}
+
+.review-1 {
+
+    background-image: url(./Media/review-background.png);
+    background-repeat: no-repeat;
+    text-align: center; 
+    margin: 17px; 
+    height: 300px;
+    margin-top: -3px;
+    
+}
+
+
+.testimonials-title-text {
+    margin-top: 300px;
+    text-align: center;
+    
+
+}
+
+.testimonials-title {
+    font-size: 18px;
+    color: rgba(229, 132, 17, 1);
+    line-height: 21px;
+
+}
+
+
+
+.testimonials-name {
+    font-size: 42px;
+    color: black;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+.client-name {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.client-full-name {
+    font-size: 12px;
+    opacity: 60%;
+    line-height: 14px;
+    margin-top: 6px;
+}
+
+.client-review {
+    font-size: 14px;
+    opacity: 80%;
+    line-height: 16px;
+    margin-top: 22px;
+}
+
+.star-icon {
+    margin-top: 22px;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap:px; */
+    background-color: rgba(247, 247, 247, 1);
+    min-width: 1440px;
+    height: 462px;
+    
+}
+
+.what-is-panto {
+    margin-left: 0px;
+
+}
+
+.footer-lists {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+
+}
+
+.footer-panto-descr {
+    width: 293px;
+    height: 72px;
+
+}
+
+.footer-lists ul li {
+    list-style: none;
+    font-size: 15px;
+    line-height: 24px;
+    opacity: 80%;
+    margin-top: 20px; 
+    
+}
+
+.footer-lists ul h3 {
+    font-size: 17px;
+    line-height: 23px;
+    color: rgba(246, 151, 63, 1);
+}
+
+.footer-panto {
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.footer-panto-descr {
+    font-size: 15;
+    line-height: 24px;
+    opacity: 80%;
+    margin-top:30px;
+
+}
+
+.footer-icon{
+/* უნდა დავფიქრდე როგორ გავასწორო ელაინი */
+    margin-right: 10px;
+    
+    
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-around; 
+    background-color: rgba(247, 247, 247, 1);
+    margin-bottom: 20px;
+    
+    
+}
+
+.terms-privacy {
+    display: flex;
+    gap: 80px; 
+    font-size: 15px;
+    opacity: 80%;
+    line-height: 24px;
+}
+
+.copy-right {
+    font-size: 15px;
+    opacity: 50%;
+    line-height: 19.5px;
+}
+
+____________
+

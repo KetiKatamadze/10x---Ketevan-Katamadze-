@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", serif;
+    background-color: rgba(242, 242, 242, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    width: 472px;
+    background-color: white;
+    padding: 60px;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1{
+    margin-bottom: 35px;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50.83px;
+}
+
+label {
+    display: flex;
+    gap: 2px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    line-height: 14.06px;
+    margin-bottom: 5px;
+}
+
+input, select, textarea{
+    width: 100%;
+    border: 1px inset rgba(66, 80, 102, 0.4);
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 10px; 
+}
+
+.fullname-wrapper, .phone-number, .month-ccv, .radio-click-wrapper, .radio-click, .checkbox-wrapper, .checkbox-opt{
+    display: flex;
+}
+
+ .radio-click, .checkbox-opt{
+    align-items: center;
+}
+.fullname-wrapper,  .month-ccv {
+    gap: 10px; 
+} 
+
+.location-picker{
+    position: relative;
+}
+
+.location-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-90%);
+    left: 5px;
+}
+
+#location {
+   padding: 12px 12px 12px 22px;   
+}
+
+.radio-click-wrapper, .checkbox-wrapper {
+    gap: 30px;
+    margin: 10px 0;
+}
+
+textarea {
+    height: 104px;
+    resize: none;
+}
+
+button {
+    background-color: rgba(19, 106, 243, 1);
+    border: none;
+    color: white;
+    width: 117px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#phone-code {
+    width: 28%;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+.phone_number {
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+}
+
+.radio-click, .checkbox-opt{
+    gap: 10px;
+    white-space: nowrap;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="radio"], input[type="checkbox"]  {
+    width: 20px;
+    height: 20px;
+    accent-color: black;
+}

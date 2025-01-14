@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Forms</title>
+</head>
+<body>
+    
+    <form action="">
+        <h1> Input Form</h1>
+        <label for="Name"> Full Name </label>
+        <div class="fullname-wrapper">
+            <input id="Name" placeholder="Name" type="text">
+            <input id="Surname" placeholder="Surname" type="text">
+        </div>
+
+        <label for="location">Location</label>
+        
+        <div class="location-picker">
+            <span><img  class="location-icon" src="./media/location-icon.png" alt=""></span>
+            <select name="" id="location">
+                <option value="" selected> Batumi, Georgia</option>
+                <option value="">Shuakhevi, Georgia</option>
+                <option value="">Keda, Georgia</option>
+                <option value="">Khulo, Georgia</option>
+                <option value="">Khelvachauri, Georgia</option>
+                <option value="">Makhinjauri, Goergia</option>
+            </select>
+        </div>
+
+        <div class="radio-click-wrapper">
+            <div class="radio-click">
+                <input id="radio1" name="radio"
+                type="radio">
+                <label for="radio1"> Radio 1</label>
+            </div>
+            <div class="radio-click">
+                <input id="radio2"
+                name="radio" type="radio">
+                <label for="radio2">Radio 2</label>
+            </div>
+        </div>
+
+        <label for="company-name">Company information</label>
+        <div>
+           <input id="company-name" placeholder="Company name" type="text"> 
+        </div>
+        
+        <label for="case"> 
+            <span><img src="./media/LeftIcon.png" alt=""></span> Describe your case
+        </label>
+        <div> 
+           <textarea name="" id="case" placeholder="Tell us about your use case..."></textarea> 
+        </div>
+
+        <label for="phone-number">Phone number</label>
+        <div class="phone-number">
+            <select name="" id="phone-code" >
+                <option value="" selected>+995</option>
+                <option value="">+887</option>
+                <option value="">+778</option>
+                <option value="">+667</option>
+                <option value="">+223</option>
+            </select>
+            <input class="phone_number" type="text" placeholder="| &nbsp Phone number" maxlength="9">
+        </div>
+
+        <label for="card-information">Credit card information</label>
+        <div>
+           <input type="text" id="card-information" placeholder="Creditcard no."  maxlength="16"> 
+        </div>
+        
+        <div class="month-ccv">
+            <input type="text" placeholder="MM / YY" maxlength="4">
+            <input type="text" placeholder="CCV" maxlength="3">
+        </div>
+        
+        <div class="checkbox-wrapper">
+           <div class="checkbox-opt">
+                <input id="checkbox1" type="checkbox">
+                <label for="checkbox">Value 1</label>
+            </div>
+            <div class="checkbox-opt">
+                <input id="checkbox2" type="checkbox">
+                <label for="checkbox">Value 2</label>
+            </div> 
+        </div>
+
+        <button type="submit"> Submit > </button>
+    </form>
+</body>
+</html>

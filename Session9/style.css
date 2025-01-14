@@ -30,8 +30,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 41px 80px;
-    /* დავაზუსტო როგორ მუშაობს ეს */
-    width: 90%;
+    width: calc(100% - 160px);
 }
 
 header nav ul {
@@ -58,14 +57,11 @@ header nav ul li:hover {
     transition: 0.3s;
     cursor: pointer;
 }
-
-.list-arrow:hover {
+.keti:hover .list-arrow{
     transform: rotate(180deg);
     transition: 0.3s;
     cursor: pointer;
-
 }
-
 
 header span.brand-name {
     font-size: 28px;
@@ -107,6 +103,7 @@ header button span {
     background-position: center;
     background-attachment: fixed;
     text-align: center;
+    min-width: 1440px;
     height: 100vh;
 }
 
@@ -219,14 +216,13 @@ header button span {
 .content-holder input {
     width: 344px;
     height: 56px;
-    padding: 15px 0 15px 20px;
+    padding: 15px 140px 15px 20px;
     margin-left: 20px;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(4px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: none;
     border-radius: 42px;
     border: .8px solid rgba(255, 255, 255, 0.589);
     font-size: 18px;
@@ -255,10 +251,10 @@ header button span {
 
 .article-wrapper {
     display: flex;
-    height: 420px;
+    max-width: 1440px;
     align-items: center;
     justify-content: space-between;
-    margin: 0 80px;
+    margin: 80px auto;
 }
 
 .article_holder-wrapper {
@@ -302,7 +298,9 @@ header button span {
 /* Best Selling Product */
 
 .products-wrapper {
+    min-width: 1440px;
     height: 906px;
+    margin: 0 auto;
     background-color: rgba(247, 247, 247, 1);
     display: flex;
     flex-direction: column;
@@ -328,7 +326,6 @@ header button span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 42px;
 }
 
 .products-wrapper ul li {
@@ -336,16 +333,15 @@ header button span {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 84px;
+    height: 45px;
     
 }
 
 .products-wrapper ul li:hover {
     background-color: white;
-    width: 84px;
-    height: 45px;
     border-radius: 32px;
     transition: 0.3s;
-    /* აქ მინდა დავამატო სმუზ ეფექტი */
 }
 
 .best_sellers-nav {
@@ -359,7 +355,6 @@ header button span {
 
 .cards-wrapper {
     position: relative;
-    /* background-color: red; */
     position: relative;
     display: flex;
     width: 1120px;
@@ -378,7 +373,7 @@ header button span {
 .left-arrow {
     position: absolute;
     top: 50%;
-    left: 100px;
+    left: 90px;
     transform: translate(-50%, -50%);
 }
 
@@ -458,23 +453,35 @@ header button span {
 
 }
 
-.star_icon {
-    color: lightgrey;
-    font-size: 25px;
+.rating, .rating-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    cursor: pointer;
 }
 
-.star_icon:hover {
+
+
+.star_icon {
+    color: lightgrey;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.star_icon:hover, .star_icon:hover ~ .star_icon {
     color: rgba(246, 183, 111, 1);
-    transition: 0.5s;
 }
 
 /*  Experiences Materials Testimonials */
 
 .web_content-wrapper{
-    height: 2750px;
+    max-width: 1440px;
+    margin: 0 auto;
     color: white;
     display: flex;
-    gap: 200px;
+    justify-content: space-between;
+    gap: 250px;
+    padding-bottom: 150px;
     flex-direction: column;
 }
 
@@ -798,7 +805,8 @@ header button span {
 }
 
 footer {
-    height: 462px;
+    min-width: 1440px;
+    /* height: 462px; */
     background-color: rgba(247, 247, 247, 1);
     display: flex;
     flex-direction: column;
@@ -880,9 +888,10 @@ footer h3 {
 }
 
 .privacy {
+    max-width: 1440px;
     display: flex;
-    gap: 30%;
-    justify-content: center;
+    gap: 673px;
+    margin: 20px auto;
 }
 
 .copy-right {
