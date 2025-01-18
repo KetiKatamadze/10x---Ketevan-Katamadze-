@@ -214,6 +214,7 @@ header button span {
 }
 
 .content-holder input {
+    outline: none;
     width: 344px;
     height: 56px;
     padding: 15px 140px 15px 20px;
