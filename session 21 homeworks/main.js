@@ -603,3 +603,38 @@ for(let i=0; i<=20; i++){
   }
 }
 
+// ნიკოლოზ ღომიძე 
+// The Transported man (Version 1.0)
+
+const rightNum = 37; 
+
+correctAnswer(37);
+function correctAnswer(answer){
+
+  if(answer === rightNum){
+    console.log(`Congrats! Your answer ${answer} is correct.`);
+  } else if(answer < rightNum){
+    console.log(`Your answer ${answer} is lower the the correct number`);
+  } else {
+    console.log(`Your answer ${answer} is higher the the correct number`);
+  }
+}
+
+// საბა ევგენიძე 
+
+let nutHeartsCollected = true; 
+let isSongDedicated = true; 
+
+function love(){
+  if(nutHeartsCollected && isSongDedicated){
+    console.log(`წუნა და წრუწუნა დაქორწინდნენ, Wohoo. წუნამ თან 50 კაკალიც შეუგროვა და თან "ქალავ შენი სილამაზეც" უმღერა წრუწუნას`);
+  } else if(nutHeartsCollected && !isSongDedicated){
+    console.log(`არ დანებდე წუნა, ახლა სიმღერაც და ეგაა, წრუწუნა შენია`);
+  } else if(!nutHeartsCollected && isSongDedicated){
+    console.log(`კაკლის შეგროვებას რაღა უნდა, წუნა?!`);
+  } else {
+    console.log(`ეჰ წუნა, არ გყვარებია შენ წრუწუნა!`);
+  }
+}
+
+love();
