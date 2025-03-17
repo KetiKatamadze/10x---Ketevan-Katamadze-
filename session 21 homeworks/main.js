@@ -396,3 +396,210 @@ function yoda(){
 
 
 yoda();
+
+// გიგა ანანიძე 
+
+//  swap;
+let a = 3; 
+let b = 7; 
+
+let keepA = a;
+
+a = b; 
+b = keepA;
+
+console.log (`A = ${a};
+B = ${b}`);
+
+// even or odd
+let numb = 7; 
+let evenOdd = numb % 2;
+
+function evenOrOdd(){
+  if(evenOdd == 1){
+    console.log(`N = ${numb};
+odd`)
+  } else {
+        console.log(`N = ${numb};
+even`)
+  }
+}
+
+evenOrOdd();
+
+// in range
+
+let n = 1;
+let x = 3; 
+let y = 7; 
+
+let inRange = (n < y && n > x) || (n > y && n < x);
+
+function checkRange(){
+  if(inRange){
+    console.log(`
+N = ${n};
+X = ${x};
+Y = ${y};
+True.`)
+  } else {
+    console.log(`
+N = ${n};
+X = ${x};
+Y = ${y};
+false.`)
+  }
+}
+
+checkRange();
+
+// ავთო ჩუბინიძე 
+
+let currentHour = 22; 
+
+let morning = currentHour >= 6 && currentHour <= 12;
+let afternoon = currentHour >= 13 && currentHour <= 15;
+
+function whatTime(){
+  if(morning){
+    console.log(`it's ${currentHour};
+"Good Morning!"`)
+  } else if(afternoon){
+    console.log(`it's ${currentHour};
+"Good Afternoon!"`)   
+  } else {
+    console.log(`it's ${currentHour};
+"Good Night!"`)
+  }
+}
+
+whatTime();
+
+// თეიმურაზ კაჯაევი 
+
+let fuelCostPerHour = 3; 
+let earningsPerHour = 70; 
+const additionalExpenses = 50; 
+
+calcDailyEarning(8, 35);
+function calcDailyEarning(hoursWorked, extraSpending){
+  let dailyFuelCost = fuelCostPerHour * hoursWorked; 
+  console.log(`Daily fuel cost is ${dailyFuelCost}USD;
+fixed additional expennses are ${additionalExpenses}USD;
+additional expensses are ${extraSpending}USD;
+Daily total cost is ${dailyFuelCost + additionalExpenses + extraSpending}USD. `);
+
+  let earningsDaily = earningsPerHour * hoursWorked; 
+  let totalCost = dailyFuelCost + additionalExpenses + extraSpending;
+  if(earningsDaily > totalCost){
+    console.log(`Daily earning is ${earningsDaily}, so after costs driver left ${earningsDaily - totalCost}`);
+  } else {
+    console.log(`costs are higher than earnings, so driver left nothing`);
+  }
+
+}
+// მელიკი
+// 1 capitalize the first letter of a string
+
+let str1 = "hello";
+let capitalizedStr = str1.charAt(0).toUpperCase() + str1.slice(1);
+console.log(capitalizedStr);
+//  Reverse a string.
+let str = "hello";
+let reversedStr = str.split('').reverse().join('');
+console.log(reversedStr);
+// 
+
+// ირაკლი ბუკულოვი
+
+// positive numbers 
+
+let numA = 7; 
+let numB = 7;
+
+let positiveA = numA > 0;
+let positiveB = numB > 0; 
+
+if(positiveA && positiveB){
+  console.log(`both of the numbers are positive. a = ${numA}, b = ${numB}`);
+} else if(positiveA || positiveB){
+  console.log(`one of them is positive. a = ${numA}, b = ${numB}`);
+}
+
+// isNaN
+
+let variable = 17; 
+
+let isNumb = typeof variable; 
+let isNumbCheck = isNumb === "number"
+
+function isNAN(variable){
+  if(isNumbCheck){
+    console.log(`This is a number: ${variable}`);
+  } else {
+    console.log(`This is not a number: "${variable}"`);
+  }
+}
+
+isNAN(variable);
+
+
+// ნუკრი ჯიჯავაძე 
+
+//  total room area 
+
+let length = 10;
+let width = 10;
+let height = 2; 
+let costPerMeter = 1300; 
+
+let floor = length * width;
+let ceiling = floor; 
+let walls = 2 * (length * height) + 2 * (width * height); 
+
+let room = floor + ceiling + walls; 
+
+let totalCost = room * costPerMeter; 
+
+console.log(`The total room Area is: ${room}m and total cost is ${totalCost}USD.`)
+
+
+// ანი უგლავა 
+
+let weightA = 57; 
+let heightA = 174; 
+
+let BMI = (weightA / (heightA*2)) * 100; 
+
+console.log(`Your Weight is; ${weightA}kg, Height: ${heightA}cm, your BMI is: ${BMI}`);
+
+function bmiRange(BMI){
+  
+  if(BMI < 18.5){
+    console.log(`underweight`);
+  }else if(BMI > 18.5 && BMI < 24.5) {
+    console.log(`healthy range`);
+  } else if(BMI > 25 && BMI < 29.9){
+    console.log(`overweight`);
+  } else if(BMI > 30 && BMI < 39.9){
+    console.log(`obesity`);
+  } else {
+    console.log(`severe obesity`);
+  }
+}
+
+bmiRange(BMI);
+
+
+// შოთა აბაშიძე 
+
+for(let i=0; i<=20; i++){
+  if(i % 3 === 0){
+    console.log("Fizz");
+  } else if(i % 5 === 0){
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
+
