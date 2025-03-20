@@ -69,7 +69,56 @@ Exercise:
 You have an array of numbers:
 const numbers = [40, 100, 1, 5, 25, 10];
 Use sort() to sort the numbers in ascending order. -->
-    
+
+
+<!-- 1. Chain map, filter, and reduce
+You have an array of numbers:
+const numbers = [5, 12, 8, 130, 44, 3, 10];
+First, use filter() to keep only numbers greater than 10.
+Then, use map() to multiply each of these numbers by 2.
+Finally, use reduce() to find the sum of the resulting numbers.
+
+2. Sort objects by multiple criteria
+You have an array of people:
+const people = [
+{ name: “Alice”, age: 25 },
+{ name: “Bob”, age: 30 },
+{ name: “Charlie”, age: 25 },
+{ name: “David”, age: 20 }
+];
+Sort this array first by age in ascending order, and if two people have the same age, sort them by name alphabetically.
+
+3. Find unique values from two arrays
+You have two arrays:
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [4, 5, 6, 7, 8];
+Create a new array containing only values that are unique (appear in only one of the two arrays, not in both).
+
+4. Check if all users have emails and at least one user is an admin
+You have an array of users:
+const users = [
+{ name: “Alice”, email: “alice@mail.com”, role: “user” },
+{ name: “Bob”, email: “bob@mail.com”, role: “admin” },
+{ name: “Charlie”, email: “charlie@mail.com”, role: “user” }
+];
+Use every() to check if every user has an email.
+Use some() to check if at least one user has the role “admin”.
+
+5. Group items by a property
+You have an array of products:
+const products = [
+{ name: “Apple”, category: “fruit” },
+{ name: “Banana”, category: “fruit” },
+{ name: “Carrot”, category: “vegetable” },
+{ name: “Cucumber”, category: “vegetable” }
+];
+Write a function that groups products by category and returns an object like this:
+{
+fruit: [“Apple”, “Banana”],
+vegetable: [“Carrot”, “Cucumber”]
+}
+ -->
+
 
 <script src="./main.js"></script>
 </body>
