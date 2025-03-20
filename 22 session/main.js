@@ -22,10 +22,10 @@ console.log(castSpell("Expelliarmus", "Hermione"));
 
 // One Piece Bounty Calculator – Return Values
 
-function calculateBounty(currentBounty, increase) {
+let calculateBounty = function (currentBounty, increase) {
   let total = currentBounty + increase;
   return `3) ${total}`;
-}
+};
 
 console.log(calculateBounty(1_500_000_000, 500_000_000));
 
@@ -65,18 +65,18 @@ console.log(shadowClone(10));
 
 // 8. Sorting the Sorting Hat – Callback Functions
 
-function sortStudent(name, callBack) {
-  console.log(`8) Sorting ${name} into ${callBack()}`);
+function sortStudent(name, callback) {
+  console.log(`8) Sorting ${name} into ${callback()}`);
 }
 
 const houseArray = ["Gryffindor", "Slytherin", "Ravenclaw", "Hufflepuff"];
 
-function callBack() {
+function houses() {
   const randomNum = Math.floor(Math.random() * 4);
   return houseArray[randomNum];
 }
 
-sortStudent("Harry", callBack);
+sortStudent("Harry", houses);
 
 // Infinity Gauntlet – Function Scope
 
@@ -121,3 +121,4 @@ function magicMirror(message, transformFunction) {
 let transformFunction = (str) => str.toUpperCase();
 
 console.log(magicMirror("Will i be rich?", transformFunction));
+
