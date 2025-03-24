@@ -1,4 +1,4 @@
-// Pokémon Battle – Function Basics
+// 1. Pokémon Battle – Function Basics
 
 function compareAttack(pokemon1, attack1, pokemon2, attack2) {
   let stronger = attack1 > attack2;
@@ -10,7 +10,7 @@ function compareAttack(pokemon1, attack1, pokemon2, attack2) {
 
 console.log(compareAttack("Pikachu", 55, "Charizard", 84));
 
-// Hogwarts Spell Casting – Function Parameters
+// 2. Hogwarts Spell Casting – Function Parameters
 
 function castSpell(spell, wizard) {
   return `2) ${wizard} casts ${spell}`;
@@ -20,7 +20,7 @@ function castSpell(spell, wizard) {
 // castSpell("Expelliarmus", "Hermione");
 console.log(castSpell("Expelliarmus", "Hermione"));
 
-// One Piece Bounty Calculator – Return Values
+// 3. One Piece Bounty Calculator – Return Values
 
 let calculateBounty = function (currentBounty, increase) {
   let total = currentBounty + increase;
@@ -29,7 +29,7 @@ let calculateBounty = function (currentBounty, increase) {
 
 console.log(calculateBounty(1_500_000_000, 500_000_000));
 
-// Jedi Training – Default Parameters
+// 4. Jedi Training – Default Parameters
 
 function trainJedi(name, strength = 50) {
   return `4) ${name} has ${strength} power`;
@@ -38,7 +38,7 @@ function trainJedi(name, strength = 50) {
 console.log(trainJedi("Luke", 100));
 console.log(trainJedi("Rey"));
 
-// Gollum’s Precious – String Manipulation
+// 5. Gollum’s Precious – String Manipulation
 
 function gollumSays(phrase) {
   return `5) ${phrase}... ${phrase}... ${phrase}...`;
@@ -46,7 +46,7 @@ function gollumSays(phrase) {
 
 console.log(gollumSays("My precious"));
 
-// Super Mario Power-Up – Function Expressions
+// 6. Super Mario Power-Up – Function Expressions
 
 const powerUp = function (num) {
   num *= 2;
@@ -54,7 +54,7 @@ const powerUp = function (num) {
 };
 console.log(`6) ${powerUp(5)}`);
 
-// Naruto’s Shadow Clone Jutsu – Arrow Functions
+// 7. Naruto’s Shadow Clone Jutsu – Arrow Functions
 
 const shadowClone = (count) => (count *= 5);
 
@@ -75,7 +75,7 @@ function houses() {
 
 sortStudent("Harry", houses);
 
-// Infinity Gauntlet – Function Scope
+// 9. Infinity Gauntlet – Function Scope
 
 function snapFingers() {
   let stones = 6;
@@ -89,7 +89,7 @@ function snapFingers() {
 
 snapFingers();
 
-// Time-Turner – Function Hoisting
+// 10. Time-Turner – Function Hoisting
 
 turnBackTime();
 
@@ -97,7 +97,7 @@ function turnBackTime() {
   console.log(`10) Going back in time!`);
 }
 
-// Batman’s Secret Identity – Function Closures
+// 11. Batman’s Secret Identity – Function Closures
 
 function batman() {
   function realBatman() {
@@ -108,7 +108,7 @@ function batman() {
 const batmanId = batman();
 batmanId();
 
-// The Enchanted Mirror – Higher-Order Functions
+// 12. The Enchanted Mirror – Higher-Order Functions
 
 function magicMirror(message, transformFunction) {
   return `12) The mirror says: ${transformFunction(message)}`;
