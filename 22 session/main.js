@@ -36,6 +36,7 @@ function trainJedi(name, strength = 50) {
 }
 
 console.log(trainJedi("Luke", 100));
+console.log(trainJedi("Rey"));
 
 // Gollum’s Precious – String Manipulation
 
@@ -47,21 +48,17 @@ console.log(gollumSays("My precious"));
 
 // Super Mario Power-Up – Function Expressions
 
-function powerUp(num) {
+const powerUp = function (num) {
   num *= 2;
-  return `6) ${num}`;
-}
-
-console.log(powerUp(5));
+  return num;
+};
+console.log(`6) ${powerUp(5)}`);
 
 // Naruto’s Shadow Clone Jutsu – Arrow Functions
 
-function shadowClone(count) {
-  count *= 5;
-  return `7) ${count} clones created!`;
-}
+const shadowClone = (count) => (count *= 5);
 
-console.log(shadowClone(10));
+console.log(`7) ${shadowClone(10)}`);
 
 // 8. Sorting the Sorting Hat – Callback Functions
 
@@ -104,13 +101,12 @@ function turnBackTime() {
 
 function batman() {
   function realBatman() {
-    return `11) I am Batman!`;
+    console.log("11) I am Batman!");
   }
-  return realBatman();
+  return realBatman;
 }
-let batmanId = batman();
-
-console.log(batmanId);
+const batmanId = batman();
+batmanId();
 
 // The Enchanted Mirror – Higher-Order Functions
 
@@ -118,7 +114,4 @@ function magicMirror(message, transformFunction) {
   return `12) The mirror says: ${transformFunction(message)}`;
 }
 
-let transformFunction = (str) => str.toUpperCase();
-
-console.log(magicMirror("Will i be rich?", transformFunction));
-
+console.log(magicMirror("Will i be rich?", (str) => str.toUpperCase()));
