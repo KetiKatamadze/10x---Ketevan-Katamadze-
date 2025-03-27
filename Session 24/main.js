@@ -24,10 +24,10 @@ console.log(availableAvengers(["Iron Man", "", null, "Thor", undefined]));
 // 3. Spider-Man’s Mask Check (Negation !)
 
 function canRemoveMask(peopleAround) {
-  if (peopleAround) {
-    console.log(`Keep the mask on!`);
-  } else {
+  if (!peopleAround) {
     console.log(`Safe to remove mask!`);
+  } else {
+    console.log(`Keep the mask on!`);
   }
 }
 
@@ -458,3 +458,27 @@ function aqiQuality(aqi) {
   return index;
 }
 console.log(aqiQuality(90));
+
+
+// KetKat 
+
+function categorizeAge(birthYear) {
+    const currentYear = 2025;
+    const age = currentYear - birthYear;
+
+    switch (true) {
+        case age >= 0 && age < 18:
+            return `Age: ${age}, Child/Teenager`;
+        case age >= 18 && age < 60:
+            return `Age: ${age}, Adult`;
+        case age >= 60 && age < 100:
+            return `Age: ${age}, Senior`;
+        default:
+            return `Age: ${age}, Invalid Age`;
+    }
+}
+
+console.log(categorizeAge(1997));
+console.log(categorizeAge(2015));
+console.log(categorizeAge(1800));
+
