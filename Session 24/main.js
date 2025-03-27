@@ -76,8 +76,8 @@ console.log(isTreasureSpot(0));
 // 7. Doctor Strange’s Multiverse Passcode (Coercion & Quirky Comparisons)
 
 function strangePasscode(code1, code2) {
-//   return code1 == code2 && code1 !== code2;
-    return code1 !== code2;
+  //   return code1 == code2 && code1 !== code2;
+  return code1 !== code2;
 }
 console.log(strangePasscode(null, undefined));
 console.log(strangePasscode("0", 0));
@@ -128,9 +128,7 @@ function bmi(mass, height) {
 }
 
 if (markHigherBMI) {
-  console.log(
-    `Mark's BMI ${mark}  is higher than John's  ${john}`
-  );
+  console.log(`Mark's BMI ${mark}  is higher than John's  ${john}`);
 } else {
   console.log(`John's BMI ${john} is higher than Mark's ${mark}`);
 }
@@ -201,7 +199,6 @@ const minBillValue = 50;
 let tip;
 let total;
 
-
 function calculateTip(billValue) {
   if (minBillValue < billValue) {
     tip = (billValue * 15) / 100;
@@ -217,7 +214,6 @@ function calculateTip(billValue) {
     `The bill was ${billValue}, the tip was ${tip}, and the total value ${total}`
   );
 }
-
 
 calculateTip(275);
 calculateTip(40);
@@ -275,43 +271,41 @@ console.log(playGame("fire", "scissors"));
 
 // Coding Challenge #6 Triangle Type Detector
 
-function triangleType(a, b, c){
-    if(a === b && b === c && b === c){
-        return "Equilateral"
-    } else if (a === b || a === c || b === c){
-        return "Isosceles"
-    } else if (a + b <= c || a + c <= b || b + c <= a) {
-        return "Not a triangle"
-    } else {
-        return "Scalene"
-    }
+function triangleType(a, b, c) {
+  if (a === b && b === c && b === c) {
+    return "Equilateral";
+  } else if (a === b || a === c || b === c) {
+    return "Isosceles";
+  } else if (a + b <= c || a + c <= b || b + c <= a) {
+    return "Not a triangle";
+  } else {
+    return "Scalene";
+  }
 }
 
-console.log(triangleType(3,3,3));
-console.log(triangleType(3,3,5));
-console.log(triangleType(3,4,5));
-console.log(triangleType(1,2,3));
-
+console.log(triangleType(3, 3, 3));
+console.log(triangleType(3, 3, 5));
+console.log(triangleType(3, 4, 5));
+console.log(triangleType(1, 2, 3));
 
 // Coding Challenge #7 Bank Transaction System
 
+function processTransaction(balance, amount, transactionType) {
+  if (transactionType === "withdraw" && amount <= balance) {
+    return balance - amount;
+  }
 
-function processTransaction(balance, amount, transactionType){
-    if(transactionType === "withdraw" && amount <= balance){
-        return balance - amount 
-    }
+  if (transactionType === "withdraw" && amount > balance) {
+    return "Insufficient funds";
+  }
 
-    if(transactionType === "withdraw" && amount > balance){
-        return "Insufficient funds"
-    }
+  if (transactionType === "deposit") {
+    return balance + amount;
+  }
 
-    if(transactionType === "deposit") {
-        return balance + amount
-    }
-    
-    if((transactionType !== "withdraw") && (transactionType !== "deposit")){
-        return "Invalid transaction type"
-    }
+  if (transactionType !== "withdraw" && transactionType !== "deposit") {
+    return "Invalid transaction type";
+  }
 }
 
 console.log(processTransaction(500, 200, "withdraw"));
@@ -319,28 +313,148 @@ console.log(processTransaction(500, 600, "withdraw"));
 console.log(processTransaction(500, 100, "deposit"));
 console.log(processTransaction(500, 50, "transfer"));
 
-
 // Coding Challenge #7 Hotel Room Pricing System
 
 function getRoomPrice(type, isWeekend, hasDiscount) {
-    let price; 
-    
-    if (type === "Standard") {
-        price = isWeekend ? 120 : 100;
-    } else if (type === "Deluxe") {
-        price = isWeekend ? 180 : 150;
-    } else if (type === "Suite") {
-        price = isWeekend ? 250 : 200;
-    }
-    
-    if(hasDiscount) {
-        price *= 0.9;
-    }
+  let price;
 
-    return price 
+  if (type === "Standard") {
+    price = isWeekend ? 120 : 100;
+  } else if (type === "Deluxe") {
+    price = isWeekend ? 180 : 150;
+  } else if (type === "Suite") {
+    price = isWeekend ? 250 : 200;
+  }
+
+  if (hasDiscount) {
+    price *= 0.9;
+  }
+
+  return price;
 }
-
 
 console.log(getRoomPrice("Standard", false, false));
 console.log(getRoomPrice("Deluxe", true, false));
 console.log(getRoomPrice("Suite", false, true));
+
+// STUDENTS
+
+console.log(`ახლა მივხედოთ ჯგუფელების დავალებებს`);
+
+// გიორგი ხილაძე deepClosure
+
+function deepClosure() {
+  let x = 10;
+
+  function double() {
+    x *= x;
+
+    function triple() {
+      x *= 3;
+
+      function quadruple() {
+        x *= 4;
+
+        function quintuple() {
+          x *= 5;
+
+          function sextuple() {
+            x *= 6;
+            return x;
+          }
+
+          return sextuple();
+        }
+
+        return quintuple();
+      }
+
+      return quadruple();
+    }
+
+    return triple();
+  }
+
+  return double();
+}
+
+console.log(deepClosure());
+
+//   The Flea and the Ant
+
+function saveAnt(
+  grass,
+  milk,
+  cat,
+  mouse,
+  pit,
+  millet,
+  chicken,
+  crow,
+  oak,
+  acorn
+) {
+  let save =
+    grass &&
+    milk &&
+    cat &&
+    mouse &&
+    pit &&
+    millet &&
+    chicken &&
+    crow &&
+    oak &&
+    acorn;
+
+  if (save) {
+    console.log(`ღორი გვაძლევს ჯაგარს! რწყილი გადაარჩენს ჭიანჭველას`);
+  } else {
+    console.log(`სამწუხაროდ რაღაც დაგაკლდა`);
+  }
+}
+
+saveAnt(true, true, true, true, true, true, true, true, true, true);
+
+// ცოტნე
+
+function canMultiplyMatrices(matrixA, matrixB) {}
+
+// something from past
+
+const balls = [
+  "Yes - definitely",
+  "It is decidedly so",
+  "Without a doubt",
+  "Reply hazy, try again",
+  "Ask again later",
+  "Better not tell you now",
+  "My sources say no",
+  "Outlook not so good",
+  "Very doubtful",
+];
+
+function randomBall() {
+  const randomNum = Math.floor(Math.random() * 8);
+  return balls[randomNum];
+}
+
+console.log(randomBall());
+
+// გიორგი ხილაძე - Ternary operators
+
+function aqiQuality(aqi) {
+  const index =
+    aqi < 50
+      ? "Good"
+      : aqi < 100
+      ? "Moderate"
+      : aqi < 150
+      ? "Unhealthy (Sensitive Groups)"
+      : aqi < 200
+      ? "Unhealthy"
+      : aqi < 300
+      ? "Very Unhealthy"
+      : "Hazardous";
+  return index;
+}
+console.log(aqiQuality(90));
