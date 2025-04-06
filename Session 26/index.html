@@ -79,6 +79,136 @@ First risk above 150: `200`
 Cleaned data (after removing <80): `[99, 135, 200, 150, 89]`
  -->
 
+
+ <!-- EXTRA TASKS -->
+ <!-- Double the Numbers
+Given an array of numbers, return a new array with each number doubled.
+Use: map
+
+Filter Even Numbers
+Return only the even numbers from an array.
+Use: filter
+
+Sum of All Numbers
+Calculate the sum of all numbers in an array.
+Use: reduce
+
+Find the First Negative Number
+Return the first negative number from an array.
+Use: find
+
+Check for Any Negatives
+Return true if there's at least one negative number.
+Use: some
+
+Are All Numbers Positive?
+Return true only if every number is positive.
+Use: every
+
+Print Each Name
+Given an array of names, print each one.
+Use: forEach -->
+
+<!-- Capitalize First Letter of Each Word
+Given an array of words, return a new array with each word capitalized.
+Use: map
+
+Filter Users by Age
+Given an array of user objects { name, age }, return users older than 18.
+Use: filter
+
+Sort Numbers Ascending/Descending
+Sort an array of numbers in ascending and then descending order.
+Use: sort
+
+Get Total Price
+Given an array of product objects { name, price }, return the total price.
+Use: reduce
+
+Find the Longest Word
+Return the word with the most characters.
+Use: reduce or sort + at(0)
+
+Get Usernames
+Given an array of user objects { id, username }, return an array of usernames.
+Use: map
+
+Check if All Users Are Active
+Users have { name, isActive }. Return true only if all are active.
+Use: every
+
+ -->
+
+ <!-- Advanced Tasks
+Group Words by First Letter
+Create an object that groups words by their first letter.
+Use: reduce
+
+Flatten a Nested Array
+Given [[1, 2], [3, 4], [5]], return [1, 2, 3, 4, 5].
+Use: flat() or reduce
+
+Count Word Frequencies
+Given an array of words, return an object with word counts.
+Use: reduce
+
+Find Most Expensive Product
+Return the product with the highest price.
+Use: reduce or sort
+
+Remove Duplicates
+Given an array with duplicates, return a new array with only unique values.
+Use: filter + indexOf or Set
+
+Create a Comma-Separated List
+From an array of strings, return a single comma-separated string.
+Use: join(', ')
+ -->
+
+
+ <!-- 1. Nested Property Extractor
+Given an array of objects like this:
+const data = [
+  { user: { name: 'Anna', age: 22 } },
+  { user: { name: 'Ben', age: 31 } },
+  { user: { name: 'Cara', age: 27 } }
+];
+Return an array of just the user names: ['Anna', 'Ben', 'Cara'].
+Use: map, dot notation 
+
+2. Flatten Deeply Nested Arrays
+
+const arr = [1, [2, [3, [4]], 5]];
+Flatten the array into a single-level array: [1, 2, 3, 4, 5]
+Use: flat(Infinity) or recursive reduce
+
+3. Sort by Multiple Properties
+Given:
+
+const users = [
+  { name: 'Alex', age: 30 },
+  { name: 'Alex', age: 25 },
+  { name: 'Bella', age: 22 }
+];
+Sort by name alphabetically, and then by age ascending.
+Use: sort with custom comparator
+
+4. Group by Category
+
+const items = [
+  { name: 'Apple', category: 'Fruit' },
+  { name: 'Cucumber', category: 'Vegetable' },
+  { name: 'Banana', category: 'Fruit' }
+];
+Transform into:
+
+{
+  Fruit: ['Apple', 'Banana'],
+  Vegetable: ['Cucumber']
+}
+Use: reduce
+
+-->
     <script src="./main.js"></script>
 </body>
 </html>
