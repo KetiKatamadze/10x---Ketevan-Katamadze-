@@ -22,12 +22,12 @@ printArrayElements(["Apple", "Banana", "Cherry"]);
 
 
 function sumNumbersUpTo(n) {
-    let count = 1; 
+    let i = 1; 
     let total = 0;
 
-    while(n >= count){
-        total += count
-        count++
+    while(n >= i){
+        total += i
+        i++
     }
     return total
 }
@@ -534,3 +534,33 @@ function titleCase(sentence) {
 }
 
 console.log(titleCase("hello world from javascript"));
+
+
+
+// password 
+
+const password = "Paskunji777";
+
+function getPassword() {
+    let answer;
+    let tryAgain = 2; 
+
+    for (let i = 0; i < 3; i++) {
+        answer = prompt("Enter your Password: ");
+        
+        if (answer === password) {
+            alert("Your Password is correct.");
+            return;
+        } else {
+            if (tryAgain) {
+                alert(`Wrong Password, you left: ${tryAgain} try`);
+                tryAgain--
+            } else {
+                alert("Too many failed attempts. Failed!");
+
+            }
+        }
+    }
+}
+
+getPassword();
