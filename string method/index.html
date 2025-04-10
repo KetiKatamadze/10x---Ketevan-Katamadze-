@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- 1. Make It Loud
+Input: "javascript is fun"
+Task: Convert it to all uppercase using a string method.
+Method: toUpperCase()
+
+let str = "javascript is fun";
+// → "JAVASCRIPT IS FUN"
+
+2. Make It Quiet
+Input: "HELLO WORLD"
+Task: Convert it to lowercase.
+Method: toLowerCase()
+
+
+let str = "HELLO WORLD";
+// → "hello world"
+
+3. First Letter Uppercase
+Input: "coding"
+Task: Capitalize only the first letter.
+Method: charAt(), toUpperCase(), slice()
+
+let str = "coding";
+// → "Coding"
+
+4. Find the Word
+Input: "Find the hidden message"
+Task: Find the position of the word "hidden".
+Method: indexOf()
+
+let str = "Find the hidden message";
+// → 9
+
+5. Swap Words
+Input: "I like cats"
+Task: Replace "cats" with "dogs".
+Method: replace()
+let str = "I like cats";
+
+// → "I like dogs"
+6. Split the Fruits
+Input: "apple,banana,orange"
+Task: Convert it into an array.
+Method: split(",")
+
+js
+Copy
+Edit
+let str = "apple,banana,orange";
+// → ["apple", "banana", "orange"]
+7. Join the Squad
+Input: ["We", "love", "JS"]
+Task: Turn the array into a sentence.
+Method: join(" ")
+
+js
+Copy
+Edit
+let arr = ["We", "love", "JS"];
+// → "We love JS"
+8. Trim the Space
+Input: " hello "
+Task: Remove spaces from both ends.
+Method: trim()
+
+js
+Copy
+Edit
+let str = "    hello    ";
+// → "hello"
+9. Does It Include?
+Input: "JavaScript is great"
+Task: Check if it contains "great".
+Method: includes("great")
+
+js
+Copy
+Edit
+let str = "JavaScript is great";
+// → true
+10. Ends With?
+Input: "index.html"
+Task: Check if it ends with ".html".
+Method: endsWith(".html")
+
+js
+Copy
+Edit
+let str = "index.html";
+// → true
+
+ -->
+
+
+ <!-- String Reversal
+
+Write a function that takes a string as input and returns the string reversed.
+
+Palindrome Check
+
+Create a function that checks if a string is a palindrome (reads the same backward as forward). Ignore spaces, punctuation, and case.
+
+Count Vowels in a String
+
+Write a function that counts the number of vowels (a, e, i, o, u) in a string.
+
+Title Case
+
+Write a function that converts a string to title case. In title case, the first letter of each word is capitalized, and the rest of the letters are lowercase.
+
+Longest Word in a Sentence
+
+Write a function that takes a sentence and returns the longest word in the sentence.
+
+Character Frequency
+
+Create a function that takes a string and returns an object where each key is a character, and its value is the number of times it appears in the string.
+
+Remove Duplicates
+
+Write a function that takes a string and removes any duplicate characters, returning the resulting string.
+
+String Compression
+
+Implement a basic string compression algorithm where repeated characters are replaced with the character followed by the count. For example, "aaabbbbcc" becomes "a3b4c2".
+
+Find the First Non-Repeated Character
+
+Create a function that finds the first non-repeated character in a string.
+
+Substring Count
+
+Write a function that counts how many times a specific substring appears in a given string. -->
+
+
+<!--  1. First and Last Letter
+Task: Write a function that takes a word and returns an array with the first and last letters of the word.
+
+ 2. String to Words Array
+Task: Convert a sentence into an array of words.
+
+// Example: "I love coding" → ["I", "love", "coding"]
+
+
+3. Count Words
+Task: Count how many words are in a given sentence.
+
+// Example: "Hello world this is JS" → 5
+
+4. Uppercase All Words
+Task: Take a sentence, split it into words, convert each to uppercase, and return the modified sentence.
+
+// Example: "hello world" → "HELLO WORLD"
+
+ 5. Extract Every Second Character
+Task: Write a function that returns every second character from a string as an array.
+
+// Example: "abcdef" → ["b", "d", "f"]
+
+
+ 6. Join Letters with Dash
+Task: Convert a word into an array of letters and join them back using dashes (-).
+
+// Example: "hello" → "h-e-l-l-o"
+
+7. Reverse Each Word
+Task: Reverse every word in a sentence individually.
+
+// Example: "dog cat" → "god tac"
+
+8. Find Word Starting with a Letter
+Task: Find the first word in a sentence that starts with a specific letter.
+
+// Example: ("The cat sat", "c") → "cat"
+ -->
+
+
+
+ <!-- 1. Capitalize Each Word
+Write a function that takes a sentence and returns the same sentence with the first letter of each word capitalized.
+
+js
+Copy
+Edit
+// Example: "i love javascript" → "I Love Javascript"
+🟡 2. Words Longer Than N Letters
+Write a function that returns all words longer than a given number n.
+
+js
+Copy
+Edit
+// Example: ("I love frontend development", 5) → ["frontend", "development"]
+🟡 3. Find Most Frequent Word
+Find the word that appears most frequently in a sentence.
+
+js
+Copy
+Edit
+// Example: "cat dog dog cat dog" → "dog"
+🟡 4. Remove Duplicate Words
+Given a sentence, remove all duplicate words and return the sentence with only the first occurrences.
+
+js
+Copy
+Edit
+// Example: "hello hello world" → "hello world"
+🟡 5. Sort Words Alphabetically
+Return the words in a sentence sorted in alphabetical order (case-insensitive).
+
+js
+Copy
+Edit
+// Example: "Banana apple Dog" → ["apple", "Banana", "Dog"]
+🟡 6. Longest Word Length
+Return the length of the longest word in a given string.
+
+js
+Copy
+Edit
+// Example: "I love programming" → 11
+🟡 7. Count Specific Letter
+Count how many times a specific letter (case-insensitive) appears in a string.
+
+js
+Copy
+Edit
+// Example: ("JavaScript", "a") → 2
+🟡 8. Swap Case
+Swap all lowercase letters with uppercase and vice versa.
+
+js
+Copy
+Edit
+// Example: "HeLLo" → "hEllO"
+🟡 9. Words That Start With Vowel
+Return all words from a sentence that start with a vowel.
+
+js
+Copy
+Edit
+// Example: "An old umbrella is outside" → ["An", "old", "umbrella", "is", "outside"]
+🟡 10. Make Hashtag Sentence
+Turn a sentence into a hashtag version: remove spaces and capitalize each word.
+
+js
+Copy
+Edit
+// Example: "hello world today" → "#HelloWorldToday" -->
+
+
+<!-- 
+ 1. Sum of Even Numbers
+Write a function that takes an array of numbers and returns the sum of all even numbers.
+
+ 2. Reverse an Array Manually
+Write your own logic (no .reverse()) to reverse the order of elements in an array.
+
+ 3. Find Second Largest Number
+Using a loop, find the second largest number in an array.
+ // Example: [5, 1, 7, 3, 9] → 7
+
+ 4. Count Occurrences
+Count how many times a specific element appears in an array.
+
+// Example: (["apple", "banana", "apple", "orange"], "apple") → 2
+
+5. Filter Without Using filter()
+Create a function that filters out all negative numbers from an array using only loops (no .filter()).
+
+// Example: [2, -1, 5, -3, 0] → [2, 5, 0]
+
+6. Find Duplicates
+Return all elements that appear more than once in an array.
+
+// Example: [1, 2, 2, 3, 4, 4, 5] → [2, 4]
+
+7. Remove Falsy Values
+Using a loop, remove all falsy values (false, 0, "", null, undefined, NaN) from an array.
+
+// Example: [0, 1, "", 2, false, 3] → [1, 2, 3]
+
+8. Flatten a 2D Array
+Flatten a nested array (1 level deep) into a single array using loops.
+
+// Example: [[1, 2], [3, 4], [5]] → [1, 2, 3, 4, 5]
+
+9. Check if Array is Sorted
+Check if an array of numbers is sorted in ascending order.
+
+// Example: [1, 2, 3, 4] → true
+// Example: [1, 3, 2] → false
+
+ 10. Custom Join
+Create a function that joins array elements into a string, using a custom separator (without using .join()).
+
+// Example: (["a", "b", "c"], "-") → "a-b-c"
+-->
+
+<script src="./main.js"></script>
+</body>
+</html>
