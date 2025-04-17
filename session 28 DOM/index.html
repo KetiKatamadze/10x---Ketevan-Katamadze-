@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Case #1: The Hidden Message
+Scenario: A crucial message was hidden in a webpage by Agent X before they disappeared. The message is stored in an invisible element.
+
+Task:
+- Select an element with ID 'hidden-message' using getElementById
+- Make it visible by changing its style properties
+- Read and decode the message (reverse the text) using string manipulation
+- Display the decoded message in another element with ID 'decoded-message' -->
+<section class="margin">
+    <p id="hidden-message" style="display: none;">!egassem terces a si sihT</p>
+    <p>Decoded Message: <span id="decoded-message"></span></p>
+    <button onclick="revealMessage()">Reveal Message</button>
+</section>
+
+
+<!-- Case #2: Classified Files
+Scenario: You've gained access to a digital filing cabinet with classified documents, but they're organized by different security levels.
+
+Task:
+- Select all elements with class 'classified-document' using getElementsByClassName
+- Filter them based on their 'security-level' attribute
+- Change the background color of 'high' security documents to red, 'medium' to yellow, and 'low' to green
+- Add a click event to each document that reveals its contents when clicked -->
+<section class="margin">
+    <div class="classified" data-security="high">Top Secret Document</div>
+    <div class="classified" data-security="medium">Confidential Report</div>
+    <div class="classified" data-security="low">Public Notice</div>
+</section>
+
+
+<!-- 
+Case #3: Suspect Identification
+Scenario: We need to identify a cyber criminal from a digital lineup. The suspect has left traces in the HTML.
+
+Task:
+- Select all elements with tag name 'suspect' using getElementsByTagName
+- Check each suspect's data attributes for clues
+- When a clue matches your evidence (provided in a variable), mark that suspect by adding a 'prime-suspect' class
+- Create a new element showing 'IDENTIFIED' and append it after the prime suspect -->
+<section class="margin">
+    <div class="suspect" data-clue="red-hat">Suspect 1</div>
+    <div class="suspect" data-clue="blue-scarf">Suspect 2</div>
+    <div class="suspect" data-clue="green-coat">Suspect 3</div>
+</section>
+
+
+
+<!-- Case #4: Digital Evidence Collection
+Scenario: You need to collect digital evidence scattered throughout a webpage.
+
+Task:
+- Use querySelectorAll to select all elements with the attribute data-evidence='true'
+- For each piece of evidence, create a new list item in an 'evidence-log' unordered list
+- Add an event that lets you mark evidence as 'collected' when clicked
+- Update a counter showing how many pieces of evidence remain -->
+<section class="margin">
+    <ul id="evidence-log"></ul>
+    <p>Evidence Remaining: <span id="evidence-count">0</span></p>
+    
+    <div data-evidence="true">USB Drive</div>
+    <div data-evidence="true">Hacked File</div>
+    <div data-evidence="true">Suspicious Email</div>
+</section>
+
+<!-- Case #5: The Disappearing Records
+Scenario: A hacker is deleting important information from a database interface. You need to create a system to monitor and recover the data.
+
+Task:
+- Create a form that allows adding new data entries to a table
+- Implement 'delete' buttons for each entry that remove them from the DOM
+- Create an 'audit log' that records each addition and deletion action
+- Add a 'recover' feature that can restore accidentally deleted entries
+- Use event delegation for efficiently handling all delete/recover actions -->
+
+<section class="margin">
+    <table>
+      <thead>
+        <tr>
+          <th>Data Entry</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="records">
+        <tr>
+          <td>Classified Info</td>
+          <td><button onclick="deleteEntry(this)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <button id="recoverButton" onclick="recoverLast()">Recover Last Deleted</button>
+    <ul id="audit-log"></ul>
+</section>
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
