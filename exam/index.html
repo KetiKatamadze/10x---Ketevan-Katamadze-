@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Quest 6 – Scan Node Sequence
+ Difficulty: Easy (2 pts)
+Story
+ You need to scan the first five nodes in sequence to map the Grid.
+Objective
+ Use a for loop to log each node number in order.
+Instructions
+Name your file quest6.js
+Use a for loop that starts at 1, ends at 5, and increments by 1
+
+
+Inside the loop, print the exact sentence for each iteration, for example:
+ Scanning node: 1
+
+
+Acceptance Criteria
+The loop runs from 1 through 5
+
+
+The console shows exactly:
+ Scanning node: 1
+ Scanning node: 2
+ Scanning node: 3
+ Scanning node: 4
+ Scanning node: 5 -->
+
+
+ <!-- Quest 2 – Calculate Sector Power
+ Difficulty: Easy (2 pts)
+Story
+ The Grid’s power levels are hidden. You must compute the combined power of two sectors.
+Objective
+ Use arithmetic to sum two power readings and display the result.
+Instructions
+Name your file quest2.js
+
+
+Define a variable sectorA with value 5
+
+
+Define a variable sectorB with value 7
+
+
+Define a constant totalPower as sectorA plus sectorB
+
+
+Print the exact sentence
+ Total power: 12
+
+
+Acceptance Criteria
+sectorA is defined as a variable with value 5
+
+
+sectorB is defined as a variable with value 7
+
+
+totalPower is defined as a constant with value 12
+
+
+The console shows exactly:
+ Total power: 12
+ -->
+
+
+ <!-- Quest 9 – Sector Assignment
+ Difficulty: Easy (2 pts)
+Story
+ Interns report to different sectors by code. You must map code to sector name.
+Objective
+ Use a switch statement to select and print the correct sector.
+Instructions
+Name your file quest9.js
+
+
+Create a constant sectorCode and assign it the text beta
+
+
+Use a switch on sectorCode:
+
+
+alpha → Sector Alpha
+
+
+beta → Sector Beta
+
+
+default → Unknown Sector
+
+
+Print the selected sector name exactly
+
+
+Acceptance Criteria
+sectorCode is defined as a constant with value beta
+
+
+The console shows exactly:
+ Sector Beta
+ -->
+
+
+ <!-- Quest 7 – System Health Check
+ Difficulty: Easy (2 pts)
+Story
+ The Grid’s CPU and memory modules report their status. You must verify overall system health.
+Objective
+ Combine two boolean statuses and report if the system is OK.
+Instructions
+Name your file quest7.js
+
+
+Create a constant cpuStatus and assign it the value true
+
+
+Create a constant memoryStatus and assign it the value true
+
+
+Create a constant systemOk that uses logical AND between cpuStatus and memoryStatus
+
+
+Print the exact sentence
+ System OK: true
+
+
+Acceptance Criteria
+cpuStatus and memoryStatus are defined as constants with value true
+
+
+systemOk is defined as a constant using logical AND of cpuStatus and memoryStatus
+
+
+The console shows exactly:
+ System OK: true
+ -->
+
+
+ <!-- Quest 4 – Directional Routing
+ Difficulty: Easy (2 pts)
+Story
+ The Grid’s traffic must be directed along the X-axis. Decide your route based on coordinate.
+Objective
+ Use an if/else statement to determine and print the correct direction.
+Instructions
+Name your file quest4.js
+
+
+Define a variable xCoordinate with value -3
+
+
+If xCoordinate is less than 0, print the exact sentence
+ Route: West
+ Otherwise, print
+ Route: East
+
+
+Acceptance Criteria
+xCoordinate is defined as a variable with value -3
+
+
+The console shows exactly:
+ Route: West -->
+
+ <!-- Quest 40 – Delegate Alert Handlers
+ Difficulty: Medium (3 pts)
+Story
+ Multiple buttons trigger the same grid alert. You must avoid duplicate code by using a callback.
+Objective
+ Attach event listeners via a shared handler function.
+Instructions
+Name your file quest40.js
+
+
+Assume an HTML page with buttons having class alert-btn
+
+
+Declare a function handleAlert that prints exactly Alert triggered
+
+
+Select all alert-btn elements into a list
+
+
+Loop over the list and attach click listeners that call handleAlert
+
+
+Acceptance Criteria
+handleAlert logs “Alert triggered”
+
+
+All buttons with class alert-btn use the same handler
+
+
+Clicking any alert-btn prints exactly:
+ Alert triggered
+ -->
+
+ <!-- Quest 39 – Merge Sector Data
+ Difficulty: Medium (3 pts)
+Story
+ Sector reports arrive as separate objects. You must combine them into one unified report.
+Objective
+ Use object methods and template literals to merge data and display a summary.
+Instructions
+Name your file quest39.js
+
+Create two constants:
+
+dataA = { sector: 'X', load: 70 }
+
+dataB = { uptime: '99%', status: 'online' }
+
+Use Object.assign to merge dataA and dataB into combinedData
+
+Create a constant summaryText using a template literal:
+ Sector X – load 70%, uptime 99%, status online
+
+
+Print the exact sentence
+ Report: Sector X – load 70%, uptime 99%, status online
+
+
+Acceptance Criteria
+dataA and dataB match the specified objects
+
+
+combinedData has all four properties
+
+
+summaryText matches “Sector X – load 70%, uptime 99%, status online”
+
+
+The console shows exactly:
+ Report: Sector X – load 70%, uptime 99%, status online -->
+
+
+ <!-- Quest 36 – Delayed Node Pings
+ Difficulty: Medium (3 pts)
+Story
+ To avoid overload, node pings must occur one at a time with a delay.
+Objective
+ Use an async loop to ping each node name with a one-second pause between pings.
+Instructions
+Name your file quest36.js
+
+
+Declare an async function pingNodes that:
+
+
+Defines an array nodes with the texts core, grid, relay
+
+
+For each node in nodes (for…of loop):
+
+
+Await a promise that resolves after 1 second
+
+
+Print the exact sentence
+ Pinging: <node>
+
+
+Call pingNodes at the end of the file
+
+
+Acceptance Criteria
+pingNodes logs exactly in order:
+ Pinging: core
+ Pinging: grid
+ Pinging: relay
+
+
+There is a one-second delay between each log
+ -->
+
+ <!-- Quest H2 – Diagnostic Sweep
+ Difficulty: Hard (5 pts)
+
+Story
+ Critical node stats arrive as an object. You must compute the overall health score to advise engineers.
+Objective
+ Write a function that reads an object’s numeric values, averages them, and reports the result.
+
+Instructions
+Name your file questH2.js
+
+
+Create a constant named diagnostics and assign it an object with properties cpu: 80, memory: 70, disk: 90
+
+
+Declare a function named calcAverage that takes one parameter stats and uses a for…in loop to sum all values in stats, divides by the number of keys, and returns the result
+
+
+Call calcAverage with diagnostics and store the result in a constant named avgHealth
+
+
+Use console.log to print exactly
+ Average health: 80
+
+
+
+Acceptance Criteria
+diagnostics is defined as a constant object with cpu 80, memory 70, disk 90
+
+
+calcAverage correctly loops over stats and returns 80
+
+
+avgHealth holds the value 80
+
+
+The console shows exactly:
+ Average health: 80
+ -->
+
+ <!-- Quest H6 – Merge Config Objects
+ Difficulty: Hard (5 pts)
+
+Story
+ User settings must override defaults without mutating them.
+
+Objective
+ Combine two config objects into one, then report all settings.
+
+Instructions
+Name your file questH6.js
+
+
+Create a constant named defaultConfig and assign it an object with mode: 'auto' and speed: 100
+
+
+Create a constant named userConfig and assign it an object with speed: 80 and logging: true
+
+
+Use Object.assign to merge defaultConfig and userConfig into a new constant named finalConfig
+
+
+Use a template literal and console.log to print exactly
+ Final config: mode:auto, speed:80, logging:true
+
+
+
+Acceptance Criteria
+defaultConfig remains unchanged with mode 'auto' and speed 100
+
+
+userConfig remains unchanged with speed 80 and logging true
+
+
+finalConfig has mode 'auto', speed 80, logging true
+
+
+The console shows exactly:
+ Final config: mode:auto, speed:80, logging:true
+ -->
+
+ <!-- Quest H10 – Threshold Logger
+ Difficulty: Hard (5 pts)
+Story
+ A nested logger warns only when values exceed a threshold.
+Objective
+ Use nested functions, default parameters, and a loop to log warnings.
+Instructions
+Name your file questH10.js
+
+
+Create a constant values = [10, 20, 5, 30]
+
+
+Declare createLogger(threshold = 15) that:
+
+
+Declares logValues() which loops over values and for each number > threshold, prints Warning: <number>
+
+
+Returns logValues
+
+
+Call createLogger() to get logger, then call logger()
+
+
+Acceptance Criteria
+logger() prints exactly:
+Warning: 20
+Warning: 30
+ -->
+
+<!-- Quest H3 – Critical Sector Finder
+ Difficulty: Hard (5 pts)
+
+Story
+ You need to pinpoint the sector under highest load to prevent outages.
+
+Objective
+ Use array methods and a reduce callback to find which sector has the maximum load.
+
+Instructions
+Name your file questH3.js
+
+
+Create a constant named sectors and assign it an array of objects:
+ • name: 'X', load: 20
+ • name: 'Y', load: 50
+ • name: 'Z', load: 40
+
+
+Use the array reduce method with an arrow function to find the object with the highest load and store it in a constant named critical
+
+
+Use a template literal and console.log to print exactly
+ Critical sector: Y with load 50
+
+
+Acceptance Criteria
+sectors is defined as a constant array with the three specified objects
+
+
+reduce returns the object for sector Y
+
+
+critical holds the object { name: 'Y', load: 50 }
+
+
+The console shows exactly:
+ Critical sector: Y with load 50
+ -->
+
+ <button class="alert-btn"></button>
+ <button class="alert-btn"></button>
+ <button class="alert-btn"></button>
+
+ <script src="./quest6.js"></script>
+ <script src="./quest2.js"></script>
+ <script src="./quest9.js"></script>
+ <script src="./quest7.js"></script>
+ <script src="./quest4.js"></script>
+ <script src="./quest40.js"></script>
+ <script src="./quest39.js"></script>
+ <script src="./quest36.js"></script>
+ <script src="./questH2.js"></script>
+ <script src="./questH6.js"></script>
+ <script src="./questH10.js"></script>
+ <script src="./questH3.js"></script>
+
+</body>
+</html>
