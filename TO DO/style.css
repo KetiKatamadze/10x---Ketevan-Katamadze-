@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6f6f6;
+    overflow: hidden;
+}
+
+.main-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.todo-nav{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#todo-input{
+    width: 500px;
+    height: 30px;
+    border: 2px solid #d3d0d0
+}
+
+#add-btn{
+    width: 30px;
+    height: 30px;
+    background-color: #635BFF;
+    border-radius:7px;
+    border-style: none;
+    font-size: 30px;
+    color: white;
+}
+#dark-mode{
+    width: 30px;
+    height: 30px;
+    background-color: #635BFF;
+    border-radius:7px;
+    border-style: none;
+    font-size: 20px;
+    color: white;
+}
+
+/* task styles */
+
+.task-data {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tasks{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 10px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #d3d0d0;
+}
+.todo-task{
+    width: 30px;
+    height: 30px;
+}
+.task{
+    width: 400px;
+}
+
+.delete-btn, .edit-btn, .save-button{
+    min-width: 30px;
+    height: 30px;
+    background-color: #15be5374;
+    border-style: none;
+    border-radius:7px;
+    color: white;
+    /* font-style: bold; */
+}
+
+.edit-input{
+    height: 30px;
+    background-color: white;
+    border: 2px solid #d3d0d0;
+}
