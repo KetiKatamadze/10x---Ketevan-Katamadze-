@@ -35,6 +35,8 @@ checkBtn.addEventListener("click", () => {
     body.style.backgroundColor = winColor;
     checkBtn.classList.add("disable");
     userInput.setAttribute("disabled", "disabled");
+    checkBtn.setAttribute("disabled", "disabled");
+
   } else if (value < secretNumber) {
     title.textContent = "Your number is too low...";
     score--;
@@ -48,6 +50,9 @@ checkBtn.addEventListener("click", () => {
   if (score === 0) {
     title.textContent = "You lost the game";
     checkBtn.classList.add("disable");
+    userInput.setAttribute("disabled", "disabled");
+    checkBtn.setAttribute("disabled", "disabled");
+
   }
 
   if (value < 0 || value > 20) {
@@ -64,6 +69,7 @@ resetBtn.addEventListener("click", () => {
   numberBox.textContent = "?";
   userInput.value = "...";
   userInput.removeAttribute("disabled");
+  checkBtn.removeAttribute("disabled");
   secretNumber = Math.floor(Math.random() * 20) + 1;
   body.style.backgroundColor = bgColor;
 });

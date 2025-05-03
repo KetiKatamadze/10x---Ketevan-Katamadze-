@@ -41,4 +41,7 @@
   .check-btn {
     @apply text-[var(--color-bg)] text-3xl bg-[var(--color-primary)] w-[150px] h-[60px] hover:bg-gray-200 rounded-[10px];
   }
+  /* .diable{
+    @apply pointer-events-none
+  } */
 }
