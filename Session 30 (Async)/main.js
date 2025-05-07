@@ -82,15 +82,11 @@ const createCard = (countries) => {
     modalTxt.appendChild(modalCapital)
     modalTxt.appendChild(modalContinent)
 
- 
-
   })
   modal.addEventListener("click", () => {
     modal.style.display = "none";
     modal.innerHTML = "";
   })
-
-
   return cardWrapper
 }
 
@@ -100,8 +96,6 @@ const cardContent = (countries) => {
     cardContainer.appendChild(card)
   })
 }
-
-
 async function country() {
   try{
     const response = await fetch("https://restcountries.com/v3.1/all")
